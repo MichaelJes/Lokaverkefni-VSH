@@ -1,0 +1,20 @@
+.content-box, .center-text{
+	text-align: center;
+}
+.content-header{
+	color: #555;
+	font-weight: 150;
+	font-size: 100%;
+}
+.content-text{
+	word-wrap: break-word;
+	white-space: pre-line;
+	margin: 20px;
+}
+.info-text{
+	background-color: #2d3e50;
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> origin/master
