@@ -1,0 +1,330 @@
+body {
+	font-family:arial, sans-serif;
+	width:960px;
+	margin:0 auto;  /*0=top+bottom, auto=right+left*/
+  	background-color: #efefef;
+}
+h1, h2, h3, h4, p {		/*fyrirsagnir og málsgrein fá sömu padding gildin*/
+	padding:0 10px;
+}
+h4 {
+	margin-bottom: -1em;
+}
+a {
+	color: #9cf;
+}
+a:visited{
+	color: #06c;
+	text-decoration: none;
+}
+a:hover{
+	color: #f90;
+	text-decoration: none;
+}
+div,
+header,
+aside,
+article {
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari chrome*/
+	box-sizing:border-box; /* Border og padding (px stærð) leggst inná öll div og hefur ekki áhrif á heildarbreidd */
+}
+header {
+	margin:0 0 10px 0;
+	background-image: -webkit-linear-gradient(left, #f90, #FFEBCC);
+	background-image: -moz-linear-gradient(left, #f90, #FFEBCC);
+	background-image: -ms-linear-gradient(left, #f90, #FFEBCC);
+	background-image: -o-linear-gradient(left, #f90, #FFEBCC);
+	background-image: linear-gradient(left, #f90, #FFEBCC);
+}
+header h1 {
+	color: #fff;
+	font-weight: normal;
+	padding:.3em;
+}
+/* efnisyfirlit */
+nav{
+	width:220px; 
+	margin:10px;
+	border:0px;
+	float:left;
+}
+nav a {
+	display: block;
+	background-color: #09f;
+	color: #fff;
+	border: 3px outset #9cf;
+	padding: 5px;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 6px;
+	margin-bottom: 5px;
+    -webkit-transition: all 1s; /*skiptir um lit á 1 sek. í hover*/
+    transition: all .5s;
+}
+nav a:visited{
+	color: #eee;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #ff0;
+	border: 3px inset #9cf;
+	background-color: #06f;
+}
+.virkur{
+	color: #fff;
+	background-color: #06f;
+	border: 3px inset #6df;
+}
+article {
+	min-height: 570px;
+	width: 380px;
+	float: left;
+}
+blockquote {
+	width: 300px;
+	border:1px dashed #888;
+	border-radius: 6px;
+	padding: 10px;
+}
+figure {
+	width: 240px;
+	float: right;
+}
+.hringur {
+	border-radius: 50%;
+}
+figcaption{
+	text-align: center;
+	font-size: .8em;
+	font-style: italic;
+}
+footer {
+	margin: 0;
+	background: #777;
+	border:0;
+	border-radius: 0 0 6px 6px;
+}
+footer a {
+	display: block;
+	color: #fff;
+	padding: .5em;
+	font-size: .8em;
+	text-align: center;
+	text-decoration: none;
+}
+footer a:hover {
+	color: #ff0;
+}
+footer h4 {
+	color:#ddd;
+	font-variant:Small-caps;
+	font-size:.9em;
+	text-align:center;
+	padding:10px;
+	margin: 0; 
+}
+.gradient{
+	background-image: -webkit-linear-gradient(top, #eee, #ccc);
+	background-image: -moz-linear-gradient(top, #eee, #ccc);
+	background-image: -ms-linear-gradient(top, #eee, #ccc);
+	background-image: -o-linear-gradient(top, #eee, #ccc);
+	background-image: linear-gradient(top, #eee, #ccc);
+	overflow: hidden;
+}
+.mainContent {
+	width:700px;
+	float:right;
+}
+
+.Column{
+	width:220px;
+	border:0px solid;
+	float:left;
+}
+.cBoth {
+	clear:both;
+}
+.alfa{
+	margin-left: 0;
+}
+.omega {
+	margin-right: 0;
+}
+.wide {
+	width: 670px;
+}
+.wide p{
+	line-height: 1.6em;
+}
+
+/* ++++++++++++++++++ transform +++++++++++++++++++ */
+.trans {
+    -ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Safari */
+    transform: rotate(30deg);
+
+    position: absolute;
+    top:2.5em;
+    right: -2em;
+    background: orange;
+    padding: .5em 4em .5em 6em;
+    font-weight: bold;
+}
+.mynd1
+{
+
+	
+	right: 390px;
+	top: 115px;
+	opacity:1;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+
+}
+.mynd1:hover
+{
+
+		transition: opacity all 0.5s ease-in-out;
+	-moz-transition: opacity all 0.5s ease-in-out;
+	-webkit-transition: opacity all 0.5s ease-in-out;
+	-o-transition: opacity all 0.5s ease-in-out;
+	cursor: pointer;
+	opacity: 0;
+}
+.mynd2
+{
+
+	
+top: 300px;
+	opacity:1;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+
+}
+.mynd2:hover
+{
+
+		transition: opacity all 0.5s ease-in-out;
+	-moz-transition: opacity all 0.5s ease-in-out;
+	-webkit-transition: opacity all 0.5s ease-in-out;
+	-o-transition: opacity all 0.5s ease-in-out;
+	cursor: pointer;
+	opacity: 0;
+}
+.mynd3
+{
+
+top: 483px;
+	opacity:1;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+
+}
+.mynd3:hover
+{
+
+		transition: opacity all 0.5s ease-in-out;
+	-moz-transition: opacity all 0.5s ease-in-out;
+	-webkit-transition: opacity all 0.5s ease-in-out;
+	-o-transition: opacity all 0.5s ease-in-out;
+	cursor: pointer;
+	opacity: 0;
+}
+.mynd4
+{
+
+top: 483px;
+	opacity:1;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+
+}
+.mynd4:hover
+{
+
+		transition: opacity all 0.5s ease-in-out;
+	-moz-transition: opacity all 0.5s ease-in-out;
+	-webkit-transition: opacity all 0.5s ease-in-out;
+	-o-transition: opacity all 0.5s ease-in-out;
+	cursor: pointer;
+	opacity: 0;
+}
+.mynd5
+{
+
+top: 483px;
+	opacity:1;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+
+}
+.mynd5:hover
+{
+
+		transition: opacity all 0.5s ease-in-out;
+	-moz-transition: opacity all 0.5s ease-in-out;
+	-webkit-transition: opacity all 0.5s ease-in-out;
+	-o-transition: opacity all 0.5s ease-in-out;
+	cursor: pointer;
+	opacity: 0;
+}
+.mynd6
+{
+
+top: 483px;
+	opacity:1;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+
+}
+.mynd6:hover
+{
+
+		transition: opacity all 0.5s ease-in-out;
+	-moz-transition: opacity all 0.5s ease-in-out;
+	-webkit-transition: opacity all 0.5s ease-in-out;
+	-o-transition: opacity all 0.5s ease-in-out;
+	cursor: pointer;
+	opacity: 0;
+}
+.pop-up
+{
+	    background-color: hotpink;
+	    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   { right:300px; top:500px;}
+    25%  {right:0px; top:500px;}
+    50%  {left:300px; bottom:1100px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+}
+.pop-up:hover
+{
+
+		transition: opacity all 1.5s ease-in-out;
+	-moz-transition: opacity all 1.5s ease-in-out;
+	-webkit-transition: opacity all 1.5s ease-in-out;
+	-o-transition: opacity all 1.5s ease-in-out;
+
+	opacity: 0;
+}
+
+
+
+
+
+
+
